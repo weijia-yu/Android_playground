@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android_playground</string>
+    <string name="title_activity_dagger_test">Dagger_test</string>
+</resources>
