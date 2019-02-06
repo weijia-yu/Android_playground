@@ -24,4 +24,9 @@ public class MyModule {
         return new Wheel("white");
 
     }
+
+    @Provides
+    public Car provideCar() {
+        return new Car("provide");
+    }
 }

@@ -11,15 +11,25 @@ public class Car {
     private Shift mShift;
     private Wheel mWheel;
 
-    @Inject
-    public Car(Shift shift,
-               @Named("White") Wheel wheel) {
-        mShift = shift;
-        mWheel = wheel;
+    private String mName;
+
+    public Car() {
+//        mShift = shift;
+//        mWheel = wheel;
+        mName = "default";
     }
 
+    @Inject
+    public Car(String name) {
+        mName = name;
+    }
+
+//    public String printCar () {
+//        return mShift.getShiftType() + " " + mWheel.getWheelColor();
+//    }
+
     public String printCar () {
-        return mShift.getShiftType() + " " + mWheel.getWheelColor();
+        return  mName;
     }
 
 }

@@ -6,6 +6,7 @@ import com.weijia.android_playground.MainActivity;
 import dagger.Component;
 
 @Component(modules = MyModule.class)
+//@Component
 public interface MyComponent {
     Car buildCar();
     void inject(Dagger_test main);
